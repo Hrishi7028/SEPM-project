@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#heading{
+    background: url('/static/contactbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin:auto;
+    padding: 10px;
+}
+.container h1{
+    padding: 15px 0;
+    text-align: center;
+}
+.container input{
+    width: 100%;
+    padding: 15px;
+    margin: 12px auto;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 18px;
+}
+.container i{
+    color: white;
+}
+.btn{
+    background-color: black;
+    width: 16%;
+    padding: 9px 16px;
+    border: 2px solid white;
+    outline: none;
+    /* margin: auto; */
+    margin: 15px auto;
+    text-align: center;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #191818;
+}
+#username{
+    color: white;
+    font-weight: bold;
+}

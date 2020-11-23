@@ -1,0 +1,23 @@
+<!doctype html>
+html
+  head
+    title My Site - #{title}
+    block scripts
+    block style
+        
+  body
+    header
+            ul
+                div.logo
+                    img(src="/static/logo.jpg", alt="", srcset="")
+                li #[a(href='/') Home]
+                li #[a(href='/') Compititions]
+                li #[a(href='/') Languages]
+                li #[a(href='/') Quiz]
+                li #[a(href='/') Codding Hub]
+                li #[a(href='/') About Us]
+                li #[a(href='/register') Registration]
+    block content
+    section#footer
+        p All copyrights are reserved by Programming.com
+        

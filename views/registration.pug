@@ -1,0 +1,30 @@
+//- page-a.pug
+extends laout.pug
+
+block scripts
+    script
+        include ../static/registration.js
+block style 
+    style 
+        include ../static/style.css
+        include ../static/contact.css
+
+block content
+   div#heading
+        div.container
+            h1 Register Here to apply.... 
+            form(action="/register" method="post" onsubmit="return validation()")
+                input(type="text", id="name" name="name" Placeholder="Enter Your name" autocomplete= "off")
+                p#username
+                input(type="email", name="email" Placeholder="Enter Your email" autocomplete= "off")
+                input(type="phone",id="tel" name="phone" Placeholder="Enter Your phone Number" autocomplete= "off")
+                p#atel
+                input(type="text",id="city" name="address" Placeholder="Enter Your Address " autocomplete= "off")
+                p#acity
+                input(type="password",id="pass" name="password" Placeholder="Enter Your password")
+                p#apass
+                input(type="password",id="cpass" name="cpassword" Placeholder="Confirm Your password")
+                br
+                button(type="submit" class="btn")
+                    |Sign
+            
