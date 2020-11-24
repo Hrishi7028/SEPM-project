@@ -13,10 +13,11 @@ block content
    div#heading
         div.container
             h1 Register Here to apply.... 
-            form(action="/register" method="post" onsubmit="return validation()")
+            form(action="/register" method="post" onsubmit="return validation()" novalidate)
                 input(type="text", id="name" name="name" Placeholder="Enter Your name" autocomplete= "off")
                 p#username
-                input(type="email", name="email" Placeholder="Enter Your email" autocomplete= "off")
+                input(type="email", name="email" id="id" Placeholder="Enter Your email" autocomplete= "off")
+                p#emailid
                 input(type="phone",id="tel" name="phone" Placeholder="Enter Your phone Number" autocomplete= "off")
                 p#atel
                 input(type="text",id="city" name="address" Placeholder="Enter Your Address " autocomplete= "off")

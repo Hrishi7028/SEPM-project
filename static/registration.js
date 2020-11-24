@@ -3,11 +3,16 @@ console.log("hello form registration");
 function validation(){
     let name = document.getElementById('name').value;
     let tel = document.getElementById('tel').value;
+    let id = document.getElementById('id').value;
     let city = document.getElementById('city').value;
     let pass = document.getElementById('pass').value;
     let cpass = document.getElementById('cpass').value;
     if (name == "") {
         document.getElementById("username").innerHTML="Please Enter Your Name";
+        return false;
+    }
+    if (id == "") {
+        document.getElementById("emailid").innerHTML="Please Enter Your Email Address";
         return false;
     }
     if (tel == "") {
